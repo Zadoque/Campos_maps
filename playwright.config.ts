@@ -1,0 +1,1 @@
+import {defineConfig} from '@playwright/test'; export default defineConfig({testDir:'./tests/e2e',use:{baseURL:'http://localhost:43783',headless:true},webServer:{command:'npm run dev --prefix frontend',url:'http://localhost:43783',reuseExistingServer:true},timeout:30000});

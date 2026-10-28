@@ -1,0 +1,15 @@
+node_modules/
+dist/
+target/
+.playwright-browsers/
+.idea/
+*.log
+data/*.osm.pbf
+data/*.md5
+data/*.verify.md5
+data/*.geojson
+data/rio.part.*
+**/__pycache__/
+frontend/test-results/
+test-results/
+docs/campos-maps.svg

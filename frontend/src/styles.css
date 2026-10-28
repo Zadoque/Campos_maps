@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+.leaflet-container {
+  touch-action: none;
+}
+
+.leaflet-control-zoom a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
