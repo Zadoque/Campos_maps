@@ -11,7 +11,9 @@ import {
   type RouteResponse,
 } from '../types/route';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:43784/api';
+// Em produção/ngrok, o frontend e a API usam o mesmo domínio.
+// Em desenvolvimento, o Vite encaminha /api para o backend local.
+const API = import.meta.env.VITE_API_URL || '/api';
 
 async function parseResponse<T>(
   response: Response,

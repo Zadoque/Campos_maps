@@ -51,11 +51,18 @@ Acesse:
 - http://localhost:43784
 - http://localhost:7474
 
-Para expor com ngrok:
+Para expor a aplicação completa pelo domínio público configurado:
 
 ~~~
 ngrok http 43783
 ~~~
+
+A URL pública configurada é https://jaunt-paradox-obsessive.ngrok-free.dev/.
+
+O frontend usa chamadas relativas em /api. O Vite encaminha essas chamadas
+para o backend local em 43784, portanto o navegador não tenta acessar
+localhost e frontend, busca de endereços e cálculo de rotas funcionam pelo
+mesmo domínio do ngrok.
 
 ## Dados reais
 
